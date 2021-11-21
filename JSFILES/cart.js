@@ -79,7 +79,9 @@ const cartDataRendering = (getCartData) => {
   let total = 0;
   let i = 1;
 
-  countCartItem(getCartData.length);
+  countCartItem(getCartData.length); //calling function item counts
+
+  getCartData.sort((a, b) => a.id - b.id); //sorting items
 
   getCartData.forEach((item) => {
     //rendering cart data
