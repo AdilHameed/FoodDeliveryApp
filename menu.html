@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <span><a href="./index.html" class="fw-bold" style="color: white">Food Delivery</a></span>
+        <li>
+          <i class="fa fa-user text-secondary"></i>
+          <a href="#" class="fw-bold pro" style="color: white">Profile</a>
+        </li>
+        <li>
+          <i class="fa fa-shopping-cart text-secondary"></i
+          ><code class="count"></code>
+          <a href="./cart.html" class="fw-bold" style="color: white">Cart</a>
+        </li>
+        <li>
+          <i class="fa fa-sign-out text-secondary" aria-hidden="true"></i
+          ><a href="./login.html" class="fw-bold logOut" style="color: white"
+            >Logout</a
+          >
+        </li>
+
+      </ul>
+    </header>
+    <main>
+
+
+      <!-- 1st row start Restaurant details  -->
+      <div style="background-color: rgb(10, 10, 28)">
+        <div class="container">
+          <div class="row">
+            <!-- 1st column start   restaurant image -->
+            <div class="col-sm-3 mt-5">
+              <img class="menuimg-res1" src="images/images.jpg" />
+            </div>
+            <!-- 1st column end   restaurant image -->
+
+
+            <!-- 2nd col retaurant details covered -->
+            <div class="col-sm-6">
+              <h3 style="color: white; margin-top: 12px" class="resName">Sheetal Chhaya</h3>
+
+              <p style="color: rgb(220, 216, 216)"class="foodType">
+                Chinese, South Indian, Indian
+              </p>
+
+              <p style="color: rgb(220, 216, 216)" class="resAddr">TowliChowki, Hyderabad</p>
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="text-center">
+                    <p class="resDisc  "><i class="fa fa-star resRate" style="color:white" ></i></p>
+                    <p style="color: rgb(220, 216, 216); line-height: 0.4"class='resReview'>
+                       Ratings
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="text-center">
+                    <p class="resDisc text-center delTime">28 mins</p>
+                    <p style="color: rgb(220, 216, 216); line-height: 0.4">
+                      Delivery Time
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="text-center">
+                    <p class="resDisc text-center resPrice">$ 5</p>
+                    <p style="color: rgb(220, 216, 216); line-height: 0.4">
+                      Cost for two
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--2nd column restaurant detail covered-->
+
+            <!-- 3rd col  OFFER details covered --> 
+            <div class="col-sm-3 mt-3">
+              <h4 class="resDisc" style="letter-spacing: 0.2ch">OFFER</h4>
+              <div class="container">
+                <p style="color: white">
+                  <img
+                    src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/100/000000/external-offer-ecommerce-kiranshastry-solid-kiranshastry.png"
+                    style="height: 2rem; width: 2rem; background-color: white" class='resOffer1'
+                  />
+                   off | Use code PARTY
+                </p>
+                <p style="color: white">
+                  <img
+                    src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/100/000000/external-offer-ecommerce-kiranshastry-solid-kiranshastry.png"
+                    style="height: 2rem; width: 2rem; background-color: white" class='resOffer2'
+                  />
+                   off | Use code TRYNEW
+                </p>
+              </div>
+            </div>
+            <!-- 3rd column end OFFER -->
+
+          </div>
+        </div>
+      </div>
+      <!-- 1st row end Restaurant details  -->
+
+
+
+<!-- 2nd row menu detail start -->
+  <div class="slideshow-container">
+
+      <div class='mt-5 mb-2' style="background-color: rgb(253, 249, 250);">
+        <div class='container recipeSlide'>
+            <div class="row ">
+           
+ <!-- left side column start dish card -->
+          <div class="col-sm-6 content2Left">
+            <div class="row">
+              <div class="col-sm-6 mr-5">
+                <div class="card shadow mt-3 mb-2" style="width: 18rem">
+                  <img
+                    class="card-img-top recipe1_img"
+                    style="height: 14rem"
+                    
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                      <div class='container'>
+                    <div class="badges">
+                      <span class="badge rounded-pill bg-success recipe1_badge1">
+                        </span
+                      >
+                      <span class="badge rounded-pill bg-warning recipe1_badge2"
+                        ></span>
+                    
+                      
+                    </div>
+                    <div class="mt-2 mb-3">
+                    <b class='recipe1_name'></b>
+                </div>
+                    <div class='d-grid gap-1'>
+                      <div><i class="fa fa-fire"></i> <b  class='recipe1_calo'></b> Calories</div>
+                      <div>
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        NutriScore &reg; <b  class='recipe1_nutri'></b>
+                      </div>
+
+                      <div  >
+                        <i class="fa fa-star" aria-hidden="true"></i> <b  class='recipe1_rate'></b> rating<code class='recipe1_totalReview' ></code>
+                        
+                      </div>
+                      <div>
+                      <i class="fa fa-inr" aria-hidden="true"></i> <b  class='recipe1_price'>219</b>
+                    </div>
+                      <button  onclick="addDishToCart(resto.menu[slideIndex+j-2])" class="btn btn-outline-success btn-sm resto1change1">Add</button>
+                      <button  onclick="addDishToCart(resto.menu[slideIndex+j-2])" class="btn btn-outline-success btn-sm resto1change3">Add</button>
+                      <button  onclick="addDishToCart(resto.menu[slideIndex+j-2])" class="btn btn-outline-success btn-sm resto2change1">Add</button>
+                      <button  onclick="addDishToCart(resto.menu[slideIndex+j-2])" class="btn btn-outline-success btn-sm resto2change3">Add</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+    
+
+    <!-- right side column start diet deatail -->
+              <div class="col-sm-5 ms-4">
+                  <div class="mt-4 mb-4">
+                <b >Work with any diet:</b>
+            </div>
+                <div class="d-grid gap-4 recipe1_diet">
+                
+                 
+                </div>
+              </div>
+               <!-- right side column end diet deatail -->
+            </div>
+          </div>
+ <!-- left side column end dish card -->
+
+  <!-- right side column start dish card -->
+          <div class="col-sm-6 content2Left">
+            <div class="row">
+              <div class="col-sm-6 mr-5">
+                <div class="card shadow mt-3 mb-2" style="width: 18rem">
+                  <img
+                    class="card-img-top recipe2_img"
+                    style="height: 14rem"
+                    
+                    alt="Card image cap"
+                  
+                  />
+                  <div class="card-body">
+                      <div class='container'>
+                    <div class="badges">
+                      <span class="badge rounded-pill bg-success recipe2_badge1">
+                        </span
+                      >
+                      <span class="badge rounded-pill bg-warning recipe2_badge2"
+                        ></span
+                      >
+                    
+                    </div>
+                    <div class="mt-2 mb-3">
+                    <b class='recipe2_name'></b>
+                </div>
+                    <div class='d-grid gap-1'>
+                      <div><i class="fa fa-fire"></i> <b class='recipe2_calo'></b> Calories</div>
+                      <div>
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        NutriScore &reg; <b class='recipe2_nutri'></b>
+                      </div>
+
+                      <div>
+                        <i class="fa fa-star" aria-hidden="true"></i> <b class='recipe2_rate'></b> rating<code class='recipe2_totalReview' ></code>
+                        
+                      </div>
+                      
+                      <div>
+                        <i class="fa fa-inr" aria-hidden="true"></i> <b  class='recipe2_price'>219</b>
+                      </div>
+                        <button  onclick="addDishToCart(resto.menu[slideIndex+j-1])" class="btn btn-outline-success btn-sm resto1change2">Add</button>
+                        <button  onclick="addDishToCart(resto.menu[slideIndex+j-1])" class="btn btn-outline-success btn-sm resto1change4">Add</button>
+                        <button  onclick="addDishToCart(resto.menu[slideIndex+j-1])" class="btn btn-outline-success btn-sm resto2change2">Add</button>
+                        <button  onclick="addDishToCart(resto.menu[slideIndex+j-1])" class="btn btn-outline-success btn-sm resto2change4">Add</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+ <!-- left side column end dish card -->
+
+  <!-- right side column start diet detail -->
+              <div class="col-sm-5 ms-4">
+                  <div class="mt-4 mb-4">
+                <b ">Work with any diet:</b>
+            </div>
+                <div class="d-grid gap-4 recipe2_diet ">
+                
+                </div>
+              </div>
+                <!-- right side column end diet detail -->
+            </div>
+          </div>
+  <!-- right side column end dish card -->
+
+            </div>
+        </div>
+      </div>
+      
+    <a class="next" onclick="incrementSlides(1)"><i class="fa fa-angle-right" style="font-weight:bolder"></i></a>
+  </div>
+  <!-- 2nd row menu detail end -->
+
+
+  <!-- <div id="myModal" class="modal"> -->
+    <!-- Modal content -->
+    <!-- <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div> -->
+  <!-- </div> -->
+
+    </main>
+
+    <!-- js file linked -->
+    <script src="./JSFILES/menu.js"></script>
+    
+  </body>
+  
+</html>

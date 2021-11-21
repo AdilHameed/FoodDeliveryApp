@@ -1,0 +1,173 @@
+/* Index page styling start */
+
+/* header css start */
+header {
+  background-color: rgb(9, 63, 77);
+  padding: 0.5em 0.5em 0.5em;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  color: white;
+  align-items: center;
+}
+span {
+  font-weight: 50px;
+  font-size: 25px;
+  margin-right: 800px;
+}
+
+li {
+  float: right;
+  margin-right: 40px;
+}
+
+/* header css end */
+
+main {
+  margin-top: 1px;
+}
+
+/* 1st row css start */
+
+.img-res2 {
+  position: relative;
+  top: -5%;
+  bottom: 36%;
+  left: 25%;
+}
+.img-res3 {
+  position: relative;
+  bottom: 63%;
+  left: 63%;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* 1st row css end */
+
+footer {
+  background-color: rgb(43, 42, 40);
+  color: white;
+  height: 40px;
+  margin-top: 5px;
+}
+
+/* Index page styling end */
+
+/* Menu page styling start */
+
+.menuimg-res1 {
+  position: relative;
+  bottom: 15%;
+  left: -30%;
+}
+
+.fa {
+  color: coral;
+}
+.resDisc {
+  color: white;
+  font-weight: bold;
+}
+.badges {
+  display: flex;
+}
+.bg-warning {
+  position: relative;
+  right: 380%;
+}
+
+.recipe1_totalReview,
+.recipe2_totalReview,
+.recipe3_totalReview,
+.recipe4_totalReview,
+.recipe5_totalReview,
+.recipe6_totalReview {
+  color: black;
+}
+
+.content2Right {
+  background-color: rgb(255, 243, 235);
+}
+
+/* Start CSS for Sliding the recipe */
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* putting forward button on right side */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover adding black background*/
+
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* End CSS for Sliding the recipe */
+
+/* CSS for cart modal */
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
