@@ -8,11 +8,16 @@ document
   .querySelector(".logOut")
   .addEventListener("click", () => localStorage.removeItem("userCred"));
 
-//header info update
-let getcartItems1 = JSON.parse(localStorage.getItem("cartItems" + user1.id));
-if (getcartItems1 && getcartItems1.length > 0)
-  document.querySelector(".count").textContent = getcartItems1.length; //rendering in header
+const headerCartCountUpdate = (cartCount) => {
+  if (cartCount && cartCount.length > 0)
+    document.querySelector(".count").textContent = cartCount.length;
+  //rendering in header
+  else document.querySelector(".count").textContent = "";
+};
 
+let getcartItems1 = JSON.parse(localStorage.getItem("cartItems" + user1.id));
+//header info update
+headerCartCountUpdate(getcartItems1);
 document.querySelector(".pro").textContent = user1.name.slice(0, 6) + " ..."; //name rendering in header
 
 //getting restaurant and menu data from localStorage and passing into menu.html
@@ -209,7 +214,7 @@ const addDishToCart = (menu) => {
     const id = Items.find((itm) => itm.id === cartItem.id);
 
     if (!id) Items = [...Items, cartItem];
-    else console.log("Already Added in Item array");
+    else console.log("Already added arr Items");
 
     localStorage.setItem("cartItems" + user.id, JSON.stringify(Items));
     console.log("it", Items);
@@ -222,7 +227,30 @@ const addDishToCart = (menu) => {
       Items = [...Items, cartItem];
 
       localStorage.setItem("cartItems" + user.id, JSON.stringify(Items));
-    } else console.log("Already Added in Local Storage");
+    } else {
+      Items = getcartItems;
+      console.log("bef", Items);
+      let arr = Items.filter((itm) => itm.id !== cartItem.id);
+      console.log("arr", arr);
+      Items = arr;
+      console.log("aft", Items);
+
+      if (Items.length === 0) {
+        headerCartCountUpdate(Items); // for header cart count update
+
+        localStorage.removeItem("cartItems" + user.id);
+
+        document.querySelector(
+          ".resto" + cartItem.restaurantId + "change" + cartItem.id
+        ).textContent = "Add"; // for dish add button update  "Added" ---> "Add"
+      } else {
+        localStorage.setItem("cartItems" + user.id, JSON.stringify(Items));
+
+        document.querySelector(
+          ".resto" + cartItem.restaurantId + "change" + cartItem.id
+        ).textContent = "Add";
+      }
+    }
   }
 
   changeItemStatus();
